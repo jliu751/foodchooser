@@ -4,20 +4,20 @@
   function agecheck()
   {
     var year = document.getElementById("byear").value;
-    year = parseint(year);
+    year = parseInt(year);
     var age = 2021 - year;
     if (age>200) {
       document.getElementById('message').innerHTML="you are way too old.";
     }
   else if (age<10) {
-      document.getelementbyid('pic1').innerHTML = "<img src= 'brocoli.jpg' onclick="PrintYes()"">
-      document.getElementById('pic2').innerHTML = "<img src= 'HamSandwich.jpg' onclick= "PrintNo()"">
-      document.getElementById('pic3').innerHTML = "<img src = 'macandcheese.jpg' onclick= "PrintNo()"">
+      document.getelementbyid('pic1').innerHTML = "<img src= 'brocoli.jpg' onclick='PrintYes()'">
+      document.getElementById('pic2').innerHTML = "<img src= 'HamSandwich.jpg' onclick= 'PrintNo()'">
+      document.getElementById('pic3').innerHTML = "<img src = 'macandcheese.jpg' onclick= 'PrintNo()'">
     }
     else if (age>10) {
-      document.getElementById('pic4').innerHTML = "<img src= 'Hamburger.jpg' onclick="PrintNo()"">
-      document.getElementById('pic5').innerHTML = "<img src= 'pilly.jpg' onclick="PrintNo()"">
-      document.getElementById('pic6').innerHTML = "<img src= 'Salad.jpg' onclick="PrintYes()"">
+      document.getElementById('pic4').innerHTML = "<img src= 'Hamburger.jpg' onclick='PrintNo()'">
+      document.getElementById('pic5').innerHTML = "<img src= 'pilly.jpg' onclick='PrintNo()'">
+      document.getElementById('pic6').innerHTML = "<img src= 'Salad.jpg' onclick='PrintYes()'">
     }
     else if (age<0) {
       document.getElementById('message').innerHTML="This is kinda scary, ngl";
@@ -60,12 +60,12 @@ function getimage(){
     <input type="button"  value="goaway" onclick="hideimage()">
     <input type="button" value="Appear" onclick="getimage()">
     <br><br><br>
-    <img src="brocoli.jpg" id="pic1">
-    <img src="HamSandwich.jpg" id="pic2">
-    <img src="macandcheese.jpg" id="pic3">
-    <img src ="Hamburger.jpg" id="pic4">
-    <img src="pilly.jpg" id="pic5">
-    <img src="Salad.jpg" id="pic6">
+    <p id="pic1">
+    <p id="pic2">
+     <p id="pic3">
+       <p id="pic4">
+         <p id="pic5">
+           <p id="pic6">
     <p id="message"></p>
     </body>
 </html>
